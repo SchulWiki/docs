@@ -1,0 +1,32 @@
+Directory
+- id: long
+- name: string
+- directory: Directory
+- entity: Entity
+- createdBy: [User:id]
+- updatedBy: [User:id]
+
+Entity:
+- id: long
+- title: string
+- content: string
+- createdAt: date
+- updatedAt: date
+- createdBy: [User:id]
+- updatedBy: [User:id]
+
+User:
+- id: long
+- username: string
+- email: string
+- password: string (hashed)
+- firstName: string
+- lastName: string
+- role: Role (cast to string)
+
+Role = [
+    SysAdmin = 4,
+    Admin = 3,
+    Editor = 2,
+    Guest = 1
+]
