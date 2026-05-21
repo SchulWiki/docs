@@ -1,8 +1,10 @@
 Directory
 - id: long
 - name: string
-- directory: Directory
-- entity: Entity
+- directories: list<Directory>
+- entities: list<Entity>
+- createdAt: date
+- updatedAt: date
 - createdBy: [User:id]
 - updatedBy: [User:id]
 
