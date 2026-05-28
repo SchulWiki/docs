@@ -1,8 +1,7 @@
 Directory
 - id: long
 - name: string
-- directories: list<Directory>
-- entities: list<Entity>
+- parentDirectory: [Directory:id]
 - createdAt: date
 - updatedAt: date
 - createdBy: [User:id]
@@ -12,6 +11,7 @@ Entity:
 - id: long
 - title: string
 - content: string
+- parentDirectory: [Directory:id]
 - createdAt: date
 - updatedAt: date
 - createdBy: [User:id]
